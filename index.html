@@ -14,9 +14,8 @@
 
 <body>
     <header>
-        <nav class="navbar"
-
-            <input type="checkbox" id="menu-toggle" />
+        <nav class="navbar"></nav>
+            <input type="checkbox" id="menu-toggle"/>
             <label for="menu-toggle" class="menu-icon">&#9776</label>
             <ul class="nav-links">
                 <li><a href="#Home">Home</a></li>
@@ -74,25 +73,25 @@
              <div class="Skills-card"><img src="Python.png"><p><!--n-->Python</p></div>
         </div>
     </section>
-  
-        <h2 style="text-align: center ;padding-top: 60px; padding-bottom: 4p;"><strong>click RESUME for Download</strong></h2>
-        <br><br>
-
     <!-- Contact Section -->
      <h2 style="font-size: 30px; text-align: center;padding-top: 60px; padding-bottom: 4p;">Contact Me</h2>
     <section id="contact">
         <div class="container">
-        <form id="contact-form" action="https://formsubmit.co/aarif638171@gmail.com" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" placeholder="Your Message" required></textarea>
+        
+<form action="https://formsubmit.co/aarif638171@gmail.com" method="POST">
+  <input type="hidden" name="_captcha" value="false">
+  
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" placeholder="Your Message" required></textarea>
 
-        <!-- Optional settings -->
-        <input type="hidden" name="_captcha" value="false" />
-        <input type="hidden" name="_next" value="https://yourwebsite.com/thankyou.html" />
+  <button class="button2" type="submit">Send Message</button>
+</form>
 
-        <button class="button2" type="submit">Send Message</button>
-      </form>
+
+
+
+
       <p id="form-status"></p>
       </div>
     </section>
