@@ -71,6 +71,12 @@
             list-style: none;
             gap: 2rem;
         }
+        h3
+        {
+            color: rgb(174, 81, 255), red,orange,green;
+            font-family: 'Segoe UI', Tahoma;
+            font-size: xx-large;
+        }
 
         .nav-links a {
             color: var(--text-light);
@@ -298,13 +304,13 @@
         }
 
         .skill-icon {
-            width: 2px;
-            height: 2px;
+            width: 1px;
+            height: px;
             margin: 0 auto 1rem;
             background: var(--gradient-1);
             border-radius: 15px;
             display: flex;
-            align-items: center;
+            align-items: ;
             justify-content: center;
             font-size: 2rem;
         }
@@ -314,6 +320,54 @@
         }
 
         .skill-card h3 {
+            margin-bottom: 1rem;
+            color: var(--accent-color);
+            padding-top: 50px;
+            padding-bottom:0px ;
+            
+        }
+
+
+
+        /* Tools Section */
+        .Tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 10rem;
+        }
+
+        .Tools-card {
+            background: var(--bg-light);
+            padding: 1rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .Tools-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .Tools-icon {
+            width: px;
+            height: px;
+            margin: 0 auto 1rem;
+            background: var(--gradient-1);
+            border-radius: 15px;
+            display: flex;
+            align-items: ;
+            justify-content: center;
+            font-size: 2rem;
+        }
+        img
+        {
+          height: 60px;
+        }
+
+        .Tools-card h3 {
             margin-bottom: 1rem;
             color: var(--accent-color);
             padding-top: 50px;
@@ -604,6 +658,7 @@
                 <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
+                 <li><a href="#skills" class="nav-link">Tools</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
@@ -619,9 +674,9 @@
     <section class="hero" id="home">
         <div class="hero-content">
             <h1>Hello, I'm <span style="color: var(--accent-color);">Ariep A</span></h1>
-            <p class="subtitle">Web developer</p>
+            <p class="subtitle">Web Developer | Graphic Designer | YouTuber | Video Editior </p>
             <p class="description">
-                I create beautiful, responsive website and applications using modern technologies. 
+                I create beautiful, responsive website,applications. I can also Design Posters and Logo Design and also Video Editing using modern technologies. 
                 Passionate about clean code, intuitive design, and user experience.
             </p>
             <div class="cta-buttons">
@@ -636,7 +691,7 @@
         <h2>About Me</h2>
         <div class="about-content">
             <div class="about-image">
-                <img src="myimage.jpg" alt="Ariep A" />
+                <img src="me.jpeg" alt="Ariep A" />
             </div>
             <div class="about-text">
                 <p>
@@ -661,6 +716,7 @@
     <!-- Skills Section -->
     <section class="section" id="skills">
         <h2>My Skills</h2>
+        <h3>Programing Skills :</h3>
         <div class="skills-grid">
             <div class="skill-card">
                 <div class="skill-icon"><img src="html.png"></div>
@@ -672,7 +728,7 @@
         
             </div>
             <div class="skill-card">
-                <div class="skill-icon"><img src="javascript.png"></div>
+                <div class="skill-icon"><img src="javascript.jpeg"></div>
                 <h3>JavaScript</h3>
             </div>
             <div class="skill-card">
@@ -680,7 +736,59 @@
                 <h3>Python (basics)</h3>
             </div>
         </div>
-    </section>
+   <br>
+   <br>
+
+    <h3>Creative Skills :</h3>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Video Editing</h3>
+            </div>
+            <div class="skill-card">
+                <h3>Logo Design</h3>
+        
+            </div>
+            <div class="skill-card">
+                <h3>Poster Design</h3>
+            </div>
+            <div class="skill-card">
+                <h3>Web Design</h3>
+            </div>
+        </div>
+ </section>
+  <section class="section" id="skills">
+        <h2>Tools I Know</h2>
+         <div class="Tools-grid">
+            <div class="Tools-card">
+    
+                <h3>Figma</h3>
+           
+            </div>
+            <div class="Tools-card">
+    
+                <h3>Davinci Resolve</h3>
+        
+            </div>
+            <div class="Tools-card">
+               
+                <h3>Builder.io</h3>
+            </div>
+            <div class="Tools-card">
+                
+                <h3>Cursor Ai</h3>
+            </div>
+             <div class="Tools-card">
+
+                <h3>VS Code</h3>
+            </div>
+             <div class="Tools-card">
+          
+                <h3>CapCut</h3>
+            </div>
+        </div>
+   <br>
+   <br>
+  </section>
 
     <!-- Projects Section -->
     <section class="section" id="projects">
@@ -717,17 +825,17 @@
                 </div>
             </div>
             <div class="project-card">
-                <div class="project-image">🎨</div>
+                <div class="project-image">🔍</div>
                 <div class="project-content">
-                    <h3>Portfolio Website</h3>
-                    <p>A responsive portfolio website showcasing modern design principles and smooth animations.</p>
+                    <h3>TruthLence</h3>
+                    <p>A Ai it can find out your image is Ai genarated or Real.</p>
                     <div class="project-tags">
                         <span class="tag">HTML5</span>
                         <span class="tag">CSS3</span>
                         <span class="tag">JavaScript</span>
                     </div>
                     <div class="project-links">
-                        <a href="#" target="_blank">Live Demo</a>
+                        <a href="https://ariep-a.github.io/TruthLence/" target="_blank">Live Demo</a>
                     </div>
                 </div>
             </div>
@@ -775,10 +883,10 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="social-links">
-            <a href="https://github.com/Ariep-A" target="_blank" title="GitHub"></github></a>
-            <a href="www.linkedin.com/in/ariep-a-a15565276" target="_blank" title="LinkedIn">💼</a>
+            <a href="https://github.com/Ariep-A" target="_blank" title="GitHub"></github>🏚️</a>
+            <a href="www.linkedin.com/in/ariep-a-a15565276" target="_blank" title="LinkedIn">🔗</a>
             <a href="" target="_blank" title="Twitter">🐦</a>
-            <a href=aarif638171@gmail.com target="_blank" title="Email">✉️</a>
+            <a href=aarif638171@gmail.com target="_blank" title="Email">📩</a>
         </div>
         <p>&copy; 2025 Ariep A. All rights reserved.</p>
     </footer>
